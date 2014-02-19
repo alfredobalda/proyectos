@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specifications>
+<language>PERL</language>
+<version>v5.10.0</version>
+<script>./src/script_11608.pl</script>
+<full_dump>./bin/full_download.sh</full_dump>
+<full_dump_1>perl ./src/script_11608.pl</full_dump_1>
+<update>./bin/full_download.sh</update>
+<update_1>perl ./src/script_11608.pl ./logs/update.log</update_1>
+<observaciones>los archivos .sh deben ser llamados desde el directorio del project, ./bin/full_download.sh y ./bin/update.sh</observaciones>
+</specifications>

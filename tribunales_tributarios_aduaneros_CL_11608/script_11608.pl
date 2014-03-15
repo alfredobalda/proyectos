@@ -282,7 +282,7 @@ sub descarga{
         copy($nombre_archivo_update,$tmppath."/logs/");	
 # copiar de /mnt/mnt/ al ftp
         print "Copiando al ftp ...";
-        my $ftp = Net::FTP::Recursive->new($destserv, Debug => 0);
+        my $ftp = Net::FTP::Recursive->new($destserv, Debug => 1);
         $ftp->login($destuser,$destpass);
         $ftp->cwd($P_project_name);
         my $orig_dir = getcwd();

@@ -288,6 +288,7 @@ sub descarga{
         my $orig_dir = getcwd();
 # cambio el path corriente por el tmp
         chdir($tmppath) or die(" No puede abrir el directorio $tmppath $!");
+        $ftp->binary;
         $ftp->rput();
         $ftp->quit;
         chdir($orig_dir);
